@@ -1,0 +1,105 @@
+.true,.false{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+#origin{
+    font-size: 18px;
+    color: red;
+}
+.true{
+    background-color: red;
+}
+
+.false{
+    background-color: green;
+}
+
+.left{
+    float: left;
+    padding-right: 10px;
+    /* border-right:2px solid #ccc; */
+    width: 47%;
+}
+
+.right{
+    float: right;
+    padding-left: 10px;
+    width: 48%;
+}
+.left p,
+.right p{
+    font-size: 14px;
+    font-weight: 600;
+}
+#backStatistiks,
+.left,
+.right,
+.left a,
+.right a{
+    font-size: 13px;
+}
+.left a,
+.right a{
+    display: block;
+}
+
+#onestep .list_wrap{
+    position: relative;
+}
+.middle_hr{
+    width:1px;
+    border:1px solid #ccc;
+    height: 100%;
+    float:left;
+    min-height: 100px;
+}
+#onestep .middle_hr{
+    height: 100%;
+    left: 50%;
+    margin-left: -1px;
+    position: absolute;
+}
+
+.blackStatistic{
+    margin:0 auto;
+    color: red;
+    font-size: 24px
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15px;
+    float: right;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+{
+    "background": {
+        "scripts": ["js/jquery-1.10.2.js", "js/background.js"]
+    },
+    "content_scripts": [{
+            "js": ["js/jquery-1.10.2.js", "js/content_script.js"],
+            "css": ["css/modal.css"],
+            "matches": ["*://*.natashaclub.com/*"],
+            "run_at": "document_end"
+        }],
+    "description": "Search Posts",
+    "icons": {
+        "128": "images/GB-128.png",
+        "16": "images/GB-16.png"
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg2LDoOYadpzDsg1oYfjw5UaF3vrYZTjQLQiMicv2Pq+ybe14Y5dodR+5pYXR8GzDVG7Yqx/MZo8KOg1FjHhNOiFB6JgPLI/m/I8tE2kqIuBkUN8K2m7z4eFN5ZIFgC88EppYkHetk68z+E2RRXM5Wtph0KlnBabOorVmcX4mrDepgq+3VBddHaAHgHj5HwRj0p7BhNfYUg7hRho7hIH8S0tk6vR57+GJhblNZaL2+4PvttkgZYoEOP1ocGpnX4xdaJgES5RIGOWJ6DZYwXKfryXgmTYQfRm/FKt39uCEwD0Z6krWxIFHkiNOonxSRMRHGae3m1Rb/GhuTQSm2hQtLwIDAQAB",
+    "manifest_version": 2,
+    "name": "Search Posts v2",
+    "page_action": {
+        "default_icon": "images/GB-16.png",
+        "default_popup": "popup.html",
+        "default_title": "Search Posts"
+    },
+    "permissions": ["tabs", "*://*.natashaclub.com/*"],
+    "short_name": "Search Posts",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "1.1.8"
+}

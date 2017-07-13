@@ -1,0 +1,9 @@
+#! /bin/sh
+#
+# Created by configure
+
+'./configure' \
+'--enable-xdebug' \
+'--with-php-config=/usr/local/php-cgi/5.6/bin/php-config' \
+'--prefix=/home/a/a262590r/.local' \
+"$@"

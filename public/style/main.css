@@ -1,0 +1,1429 @@
+/* font-family: "UbuntuLight"; */
+@font-face {
+    font-family: "UbuntuLight";
+    src: url("../fonts/UbuntuLight.eot");
+    src: url("../fonts/UbuntuLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/UbuntuLight.woff") format("woff"),
+    url("../fonts/UbuntuLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl 500';
+    src: url("../fonts/MuseoSansMedium.ttf");
+}
+@font-face {
+    font-family: 'Ubuntu Light Regular';
+    src: url("../fonts/UbuntuR.ttf");
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+fieldset
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+input:focus,textarea:focus {
+    outline: none;
+}
+/*----------------------*/
+body
+{
+    width: 100%;
+    font-family: UbuntuLight, Arial, Helvetica, sans-serif;
+    color: #444;
+    margin: 0;
+    font-size: 12px;
+    background: transparent url("../../resources/views/images/background.jpg") repeat scroll 0% 0%;
+}
+/*----------------------*/
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+.cf {
+    zoom:1;
+    height: 49px;
+}
+/*----------------------*/
+a {
+    outline: medium none !important;
+    text-decoration: none !important;
+   }
+header {
+    padding: 2.2px;
+    border-bottom: 1px solid #fff;
+    background-color: #662A50;
+
+}
+/*----------------------*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: right;
+    top: -23px;
+    left: -12px;
+}
+nav li {
+    float: left;
+}
+nav #login-trigger,
+nav #signup a {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 21.8px;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 0 8px;
+    text-decoration: none;
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+    width: 124px;
+    font-family: UbuntuLight;
+}
+nav #login-trigger {
+    font-family: "Ubuntu Light Regular";
+    color: #fff;
+    background: rgb(111, 171, 208) none repeat scroll 0% 0%;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 17px;
+    padding-bottom: 2px;
+}
+nav #login-trigger:hover,
+nav #login .active,
+nav #signup a:hover {
+    border-top: 1px solid #bbe2fc;
+    border-left: 1px solid #bbe2fc;
+    border-right: 1px solid #bbe2fc;
+}
+nav #login-content {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: -moz-linear-gradient(top, #fff, #eee);
+    background-image: -ms-linear-gradient(top, #fff, #eee);
+    background-image: -o-linear-gradient(top, #fff, #eee);
+    background-image: linear-gradient(top, #fff, #eee);
+    padding: 15px;
+    -moz-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0,0,0,.9);
+    box-shadow: 0px 0px 11px 7px rgba(0,0,0,.9);
+}
+nav li #login-content {
+    right: 2px;
+    width: 213px;
+    border-radius: 7px;
+    height: 176px;
+}
+/*--------------------*/
+#inputs input {
+    font-family: UbuntuLight;
+    background: #f1f1f1;
+    padding: 6px 6px;
+    margin: 0px 0px 18px -4px;
+    width: 190px;
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc inset;
+    -webkit-box-shadow: 0 1px 1px #ccc inset;
+    box-shadow: 0 1px 1px #ccc inset;
+}
+#inputs input:focus {
+    background-color: #fff;
+    border-color: #77bee1;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #77bee1 inset;
+    -webkit-box-shadow: 0 0 0 1px #77bee1 inset;
+    box-shadow: 0 0 0 1px #77bee1 inset;
+}
+/*--------------------*/
+
+#login #actions {
+    margin: -2px 0 0 0;
+}
+#login #submit {
+    background-color: #924375;
+    border: 1px solid #c36fa4;
+    float: left;
+    height: 31px;
+    padding: 0;
+    width: 104%;
+    cursor: pointer;
+    font-family: UbuntuLight;
+    color: #fff;
+    margin-left: -4px;
+    border-radius: 0;
+    box-shadow: 0px -13px 24px 0px rgba(0, 0, 0, 0.5) inset;
+}
+#login #submit:hover,
+#login #submit:focus {
+    background-color: #6FABD0;
+    border: 1px solid #6FABD0;
+}
+#login #submit:active {
+    outline: none;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+#login #submit::-moz-focus-inner {
+    border: none;
+}
+#login label {
+    float: right;
+    line-height: 30px;
+}
+#login label input {
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+
+a {
+    color: #529DC3;
+}
+.content{
+    width: 960px !important;
+    margin: 0 auto;
+}
+.searchpost-logo{
+    float: left;
+    margin-left: 19.2px;
+    margin-top: 10px;
+}
+.searchpost-logo a{
+    display: block;
+    width: 186px;
+    height: 24px;
+    background: transparent url("../../resources/views/images/search-post-logo.png") no-repeat scroll 0% 0%;
+
+}
+.href{
+    width: 200px;
+    margin: 0px auto;
+    text-align: center;
+    font-family: UbuntuLight;
+    color: #a5cce6;
+    font-size: 15px;
+    padding-top: 9px;
+    letter-spacing: 0.5px;
+    word-spacing: 4.6px;
+}
+.caret{
+    margin-right: 12px;
+}
+.href a{
+    border-bottom: 1px dotted #fff;
+    color: #a5cce6;
+    text-decoration: none;
+}
+.href span{
+    margin-left: 5px;
+}
+.navbar-default{
+    background-color: rgba(0, 0, 0, 0.0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid;
+    border-color: #c4c4c4;
+    border-radius: 0;
+}
+.backgrount-cover{
+    background: url("../../resources/views/images/search-post-header.jpg") no-repeat;
+    width: auto;
+    height: 389px;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -1px;
+    box-shadow: 0px 4px 68px -7px gray;
+}
+.backgrount-cover.other{
+    background: url("../../resources/views/images/search-post-header-other.jpg") no-repeat;
+    height: 98px;
+    background-size: cover;
+    background-position: center center;
+}
+.backgrount-cover.other .content{
+    display: none;
+}
+.backgrount-cover .content div{
+    position: relative;
+    left: 28px;
+    top: 214px;
+    width: 716px;
+    font-size: 30px;
+}
+.backgrount-cover .content div p{
+    background-color: rgba(100, 49, 83, 0.7);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 18px 14px 1px;
+    width: 716px;
+    font-family: UbuntuLight;
+    padding: 25px;
+    letter-spacing: -0.3px;
+    word-spacing: -1px;
+    line-height: 23.8px;
+}
+form>div:nth-child(2){
+    /*display: none;*/
+}
+.form-horizontal .login, .form-horizontal .password, .form-horizontal .confirm-password{
+    float: left;
+}
+.form-horizontal .captcha{
+    clear: both;
+    float: left;
+    margin-left: 170px !important;
+    margin-bottom: 51px !important;
+}
+.form-horizontal .button-captcha{
+    float: left;
+    margin-bottom: 0px !important;
+    margin-top: 19px;
+}
+.text-content{
+    clear: both;
+    font-family: UbuntuLight;
+    font-size: 14px;
+    padding-left: 28px;
+    word-spacing: 1px;
+    line-height: 23px;
+}
+.text-content p:first-child{
+    margin-bottom: 26px;
+}
+#login-trigger span{
+    display: none;
+}
+#login-trigger i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url("/resources/views/images/avtorization-ico.png") no-repeat;
+    position: relative;
+    right: 6px;
+    top: 1px;
+}
+.form-horizontal .form-group{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 68px;
+}
+.col-md-6 {
+    width: 100%;
+    padding: 0;
+    margin-top: 9px;
+    margin-left: 3px;
+}
+.form-control,
+.left-panel.blacklist input.blacklist{
+    border: 3px solid #77bee1;
+    border-radius: 13px;
+    height: 51px;
+    width: 272px;
+    font-family: UbuntuLight;
+    font-size: 18px;
+    padding-left: 17px;
+    padding-top: 2px;
+    letter-spacing: -0.6px;
+    background-color: #f3f3f3;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar.navbar-default h1{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    font-style: italic;
+    letter-spacing: 0.6px;
+    font-family: "Museo Sans Cyrl 500";
+    color: rgb(99, 127, 163);
+    text-transform: uppercase;
+}
+#app-navbar-collapse>h1{
+    margin-left: -11px;
+}
+.form-horizontal .password, .form-horizontal .confirm-password{
+    margin-left: 35px;
+}
+.form-horizontal .confirm-password{
+    width: 276px;
+}
+.form-group.button-captcha .btn.btn-primary{
+    background: transparent url("/resources/views/images/registration-button-bcg.png") no-repeat scroll 0% 0%;
+    border: medium none;
+    width: 261px;
+    height: 54px;
+    font-family: UbuntuLight;
+    padding: 0;
+}
+footer{
+    border-top: 1.5px solid #c4c4c4;
+    margin-top: 55px;
+}
+.footer-content{
+    text-align: center;
+    padding: 21px;
+    font-family: UbuntuLight;
+    font-size: 14px;
+}
+
+#login-content{
+    margin-top: 20px;
+}
+#login-content i{
+    display: block;
+    width: 47px;
+    height: 13px;
+    position: relative;
+    background: transparent url("/resources/views/images/menu-arrow.png") no-repeat scroll 0% 0%;
+    bottom: 28px;
+    left: 118px;
+}
+#inputs{
+    margin-top: -12px;
+}
+#inputs .form-group{
+    margin-bottom: 0px;
+}
+#actions .btn.btn-link{
+    font-family: UbuntuLight;
+    color: #4e9bc3;
+    width: 103%;
+    margin-left: -3px;
+    letter-spacing: -1px;
+}
+.help-block{
+    display: none;
+}
+.col-md-10.col-md-offset-1{
+    width: 100%;
+    margin-left: 0;
+}
+#app-layout .content .container{
+    width: 100%;
+}
+/*----------------------------------*/
+.panel-default > .panel-heading{
+    border: 0;
+    background: transparent url("../../resources/views/images/background.jpg") repeat scroll 0% 0%;
+}
+.panel.panel-default{
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent url("../../resources/views/images/background.jpg") repeat scroll 0% 0%;
+}
+.panel.panel-default>.container{
+    clear: both;
+}
+.panel-heading>a,
+.panel.panel-default>a{
+    display: block;
+    float: left;
+    height: 27px;
+    padding: 3px;
+    margin-right: 18px;
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: UbuntuLight;
+    text-decoration: none;
+}
+.panel-heading>a:first-child{
+    width: 105px;
+    background: transparent url("/resources/views/images/button-account.png") no-repeat scroll 0% 0%;
+}
+.panel-heading.account>a:first-child{
+    background: transparent url("/resources/views/images/button-account-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.panel-heading>a:nth-child(2){
+    display: none !important;
+    width: 105px;
+    background: transparent url("/resources/views/images/button-payment.png") no-repeat scroll 0% 0%;
+}
+.panel-heading{
+    margin-top: -14px;
+}
+.panel-heading.payment>a:nth-child(2){
+    background: transparent url("/resources/views/images/button-payment-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.panel-heading>a:nth-child(3){
+    background: transparent url("/resources/views/images/button-blacklist.png") no-repeat scroll 0% 0%;
+    width: 164px;
+}
+.panel-heading.blacklist>a:nth-child(3){
+    background: transparent url("/resources/views/images/button-blacklist-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.panel-heading>a:nth-child(4){
+    background: transparent url("/resources/views/images/button-blacklist.png") no-repeat scroll 0% 0%;
+    width: 164px;
+}
+.panel-heading.statistics>a:nth-child(4){
+    background: transparent url("/resources/views/images/button-blacklist-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.panel-heading>a:nth-child(5){
+    width: 220px;
+    background: transparent url("/resources/views/images/button-unreadmsg.png") no-repeat scroll 0% 0%;
+}
+.panel-heading.unreadmsg>a:nth-child(5){
+    background: transparent url("/resources/views/images/button-unreadmsg-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.panel-heading>a:last-child{
+    width: 168px;
+    background: transparent url("/resources/views/images/button-blacklist.png") no-repeat scroll 0% 0%;
+}
+.panel-heading.dublicat>a:last-child{
+    background: transparent url("/resources/views/images/button-blacklist-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.searchpost-stat-left-col{
+    width: 65% !important;
+}
+.searchpost-stat-right-col{
+    width: 35% !important;
+}
+#table2{
+    float: left;
+    width: 95.4% !important;
+}
+#table2 tr th{
+    height: 45px;
+    text-align: center;
+    font-family: UbuntuLight;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background: #b3b3b3;
+}
+#table2 tr th:first-child{
+    width: 60px;
+}
+#table2 tr th:nth-child(2){
+    width: 126px;
+}
+#table2 tr th:nth-child(3){
+    width: 180px;
+}
+#calendarBy{
+    margin-left: 5px;
+}
+#table2 tr th a{
+    color: #504E4E;;
+}
+#table2 tr th:first-child, #table2 tr th:nth-child(2), #table2 tr th:nth-child(3){
+    border-right: 1px solid #fff;
+}
+#table2 tr th:nth-child(2) i, #table2 tr th:nth-child(3) i, #table2 tr th:nth-child(4) i{
+    display: inline-block;
+    width: 8px;
+    height: 13px;
+    background: transparent url("/resources/views/images/table-arrow.png") no-repeat scroll 0% 0%;
+    position: relative;
+    right: 8px;
+}
+#table2>tbody tr{
+    height: 50px;
+    border-bottom: 1px solid #b3b3b3;
+    background: #e1e1e1;
+}
+#table2>tbody .tablesorter-hasChildRow{
+    background: #cdcdcd;
+    border-top: 1px solid #fff;
+}
+#table2>tbody tr td,
+.panel-body.blacklist table tbody tr td{
+    border-right: 0px solid;
+    text-align: center;
+    font-family: UbuntuLight;
+    font-size: 14px;
+    color: #6a6a69;
+}
+#table2>tbody tr td:first-child a,
+.panel-body.blacklist table tbody tr td:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    padding: 14px;
+}
+.panel.panel-default>.container>.panel-body>div{
+    width: 49%;
+    float: left;
+}
+.panel.panel-default>.container>.panel-body>div:first-child{
+    width: 50.6%;
+}
+.panel.panel-default>.container>.panel-body>div:last-child{
+    border-left: 1px solid #c4c4c4;
+    padding-left: 18px;
+    min-height: 460px;
+}
+.right-statistics{
+    min-height: 327px !important;
+}
+.panel.panel-default>.container>.panel-body>div:last-child h1{
+    margin-top: 9px;
+    margin-bottom: 0;
+    font-family: "Museo Sans Cyrl 500";
+    color: rgb(99, 127, 163);
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.panel.panel-default .container .panel-body>div:last-child .panel-body .form-group input{
+    width: 107.5%;
+    border: 3px solid rgb(119, 190, 225);
+    border-radius: 13px;
+    height: 51px;
+    font-family: UbuntuLight;
+    font-size: 12px;
+    padding-left: 17px;
+    padding-top: 2px;
+    letter-spacing: -0.6px;
+    word-spacing: 2.5px;
+    background-color: rgb(243, 243, 243);
+}
+.panel.panel-default .container .panel-body>div:last-child .panel-body p{
+    margin: 0;
+}
+.panel.panel-default .container .panel-body>div:last-child .panel-body p input,
+.left-panel .form-group .col-md-6.col-md-offset-4 button,
+.right-panel.blacklist>p>input{
+    background: transparent url("/resources/views/images/buttom-stattic.png") no-repeat scroll 0% 0%;
+    border: 0;
+    width: 202px;
+    height: 54px;
+    color: #fff;
+    margin-left: -5px;
+    margin-top: 4px;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.panel.panel-default>.container>.panel-body{
+    margin-top: 23px;
+    margin-bottom: 64px;
+}
+.panel.panel-default .container .panel-body>div:last-child .panel-body{
+    padding-left: 0px;
+}
+.panel.panel-default .container .panel-body>div:last-child .panel-body .form-group{
+    margin-bottom: 17px;
+}
+.panel.panel-default>a{
+    float: right;
+    width: 151px;
+    text-transform: inherit;
+    color: #fff;
+    padding: 0;
+    padding-left: 12px;
+    padding-bottom: 2px;
+    margin-top: 18px;
+    margin-right: 22px;
+}
+.panel.panel-default>a.add-new-blck{
+    background: transparent url("/resources/views/images/buttom-sp4.png") no-repeat scroll 0% 0%;
+}
+.panel.panel-default>a.back-new-blck{
+    background: transparent url("/resources/views/images/buttom-sp5.png") no-repeat scroll 0% 0%;
+}
+.panel-body.blacklist{
+    margin-top: 0px !important;
+}
+.panel-body.blacklist table thead tr{
+    background:#b49bab none repeat scroll 0 0;
+}
+.panel-body.blacklist table thead tr th{
+    height: 43px;
+    border-right: 1px solid #fff;
+    font-family: UbuntuLight;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #652a4f;
+    text-align: center;
+}
+.panel-body.blacklist table thead tr th:first-child{
+    width: 70px;
+}
+.panel-body.blacklist table thead tr th:nth-child(2){
+    width: 132px;
+}
+.panel-body.blacklist table thead tr th:nth-child(3){
+    width: 209px;
+}
+.panel-body.blacklist table thead tr th:last-child{
+    width: 516px;
+}
+.panel-body.blacklist table tbody tr{
+    height: 213px;
+    border-bottom: 1px solid #b3b3b3;
+}
+.panel-body.blacklist table tbody tr td{
+    vertical-align: top;
+    padding-top: 17px;
+    font-size: 15px;
+}
+.panel-body.blacklist table tbody tr td:nth-child(3){
+    vertical-align: middle;
+    padding: 0;
+}
+.panel-body.blacklist table tbody tr td:last-child{
+    position: relative;
+    text-align: justify;
+    padding-left: 10px;
+}
+.panel-body.blacklist table tbody tr td:last-child p{
+    position: absolute;
+    bottom: 12px;
+}
+.panel-body.blacklist table tbody tr td img{
+    max-width: 122px;
+    max-height: 166px;
+}
+.left-panel{
+    width: 35.8% !important;
+}
+.left-panel .form-horizontal{
+    margin-top: 9px;
+}
+.left-panel .form-horizontal .form-group{
+    margin-bottom: 17px;
+}
+.right-panel img{
+    margin-left: 10px;
+}
+.left-panel .form-group .col-md-6.col-md-offset-4 button{
+    margin-top: 14px;
+    margin-left: -4px;
+}
+.left-panel.blacklist{
+    width: 48%;
+    float: left;
+}
+.right-panel.blacklist{
+    width: 59%;
+    float: right;
+    margin-right: -6px;
+}
+.right-panel.blacklist textarea{
+    width: 100%;
+    height: 268px;
+    border: 3px solid #77bee1;
+    border-radius: 13px;
+    font-family: UbuntuLight;
+    letter-spacing: -0.6px;
+    background-color: #f3f3f3;
+    text-transform: uppercase;
+    padding: 12px 18px 12px 18px;
+    font-size: 14px;
+    color: #a7a7a7;
+    word-spacing: 4px;
+    resize: none;
+}
+.left-panel.blacklist .file-upload{
+    position: relative;
+    overflow: hidden;
+}
+.left-panel.blacklist .file-upload{
+    border: 3px solid rgb(119, 190, 225);
+    background-color: #f3f3f3;
+    border-radius: 13px;
+    height: 51px;
+    width: 344px;
+    font-family: UbuntuLight;
+    padding: 9px;
+}
+.left-panel.blacklist .file-upload>div{
+    text-transform: uppercase;
+    color: #8e8e8e;
+    font-size: 14px;
+    padding-top: 4px;
+    padding-left: 9px;
+    letter-spacing: -0.3px;
+}
+.left-panel.blacklist .file-upload>button{
+    float: right;
+    width: 94px;
+    height: 24px;
+    border: 0px none;
+    background: transparent url("/resources/views/images/buttom-add.png") no-repeat scroll 0% 0%;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding-bottom: 1px;
+    color: #8e8e8e;
+}
+.left-panel.blacklist .file_upload>div{
+    padding-left: 1em;
+}
+.left-panel.blacklist .file-upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    opacity: 0;
+    cursor: pointer
+}
+.left-panel.blacklist{
+    margin-top: 65px;
+}
+.right-panel.blacklist{
+    margin-top: 20px;
+}
+.right-panel.blacklist > p > input{
+    float: right;
+    margin-top: 19px;
+    margin-right: -1px;
+}
+.left-panel.blacklist input.blacklist{
+    font-size: 14px;
+    word-spacing: 4px;
+}
+.blacklist-img{
+    width: 127px;
+    height: 177px;
+    background-color: rgb(228, 228, 228);
+    margin-top: 14px;
+    margin-left: 18px;
+    padding: 12px 7px 0px;
+}
+.blacklist-img img{
+    width: 100%;
+}
+.text-content.blacklist{
+    margin-top: 10px;
+}
+.balcklist-message{
+    position: relative;
+    top: 42px;
+    right: -150px;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    color: rgb(167, 167, 167);
+    font-size: 18px;
+}
+.panel-body.payment-method,
+.panel-body.account{
+    padding-right: 0;
+    margin-right: -16px;
+    margin-bottom: -6px !important;
+}
+.left-panel .payment-method{
+    clear: none;
+    height: 70px;
+    margin-bottom: 11px;
+}
+.left-panel .payment-method>div{
+    float: left;
+    margin-right: 2px;
+}
+.left-panel.payment-method h2{
+    margin-top: 3px;
+    margin-bottom: 22px;
+    margin-left: 6px;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    word-spacing: 7px;
+    font-style: italic;
+    color: #637fa3;
+    font-size: 23px;
+    font-weight: lighter;
+    line-height: 27px;
+}
+.right-panel.payment-method{
+    width: 64% !important;
+    padding-left: 26px !important;
+    padding-top: 5px;
+}
+.right-panel.payment-method .anct-girls{
+    float: left;
+    width: 126px;
+    margin-right: 21px;
+    margin-bottom: 30px;
+}
+.right-panel.payment-method .anct-girls>.anct-girl-img{
+    width: 126px;
+    height: 176px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.right-panel.payment-method .anct-girls>.anct-girl-img>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 0;
+}
+.right-panel.payment-method .anct-girls>.anct-girl-img button{
+    background: transparent url("/resources/views/images/payment/delete-button.png") no-repeat scroll 0% 0%;
+    width: 25px;
+    height: 25px;
+    border: 0px none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: black;
+}
+.right-panel.payment-method .anct-girls>.anct-girl-img button:hover{
+    color: red;
+}
+.right-panel.payment-method .anct-girls>a{
+    text-align: center;
+    display: inherit;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    margin-top: 13px;
+    font-size: 13px;
+}
+.right-panel.payment-method .anct-girls>p{
+    display: none;
+}
+#payment-date{
+    width: 60%;
+    float: right;
+    font-family: UbuntuLight;
+    margin-bottom: 38px;
+    padding-left: 3px;
+    font-size: 14px;
+}
+#payment-date>p{
+    margin-bottom: 4px;
+}
+#payment-date>p:nth-child(2){
+    margin-bottom: 10px;
+}
+#payment-date>p .payment-date{
+    font-weight: bold;
+}
+#payment-date>p:last-child{
+    font-size: 43px;
+    font-family: 'Museo Sans Cyrl 500';
+}
+#payment-date>p:last-child a{
+    text-decoration: none;
+    border-bottom: 1px dashed rgb(196, 196, 196);
+    display: inline-block;
+    height: 53px;
+}
+#payment-date>p:last-child span{
+    color: #c4c4c4;
+    font-size: 49px;
+    font-weight: bold;
+}
+#payment-date>p:last-child span span{
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    height: 43px;
+    vertical-align: middle;
+    border-bottom: 1px dashed rgb(196, 196, 196);
+    border-top: 1px dashed rgb(196, 196, 196);
+    margin-top: 9px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: UbuntuLight;
+    font-weight: lighter;
+    padding-top: 11px;
+    padding-left: 5px;
+    padding-right: 5px;
+    word-spacing: 3px;
+}
+.right-panel.account .anct-girls{
+    float: left;
+}
+.container.account{
+    margin-bottom: 10px;
+}
+.tablesorter-childRow input{
+    text-align: center;
+    width: 84px;
+    border-radius: 14px;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
+}
+.tablesorter-childRow td:nth-child(2) input{
+    margin-left: 5px;
+}
+.tablesorter-childRow td:nth-child(3) input:first-child{
+    float: left;
+}
+#login-user-sp{
+    margin-top: 4px;
+}
+.dropdown a.dropdown-toggle{
+    font-family: "Ubuntu Light Regular";
+    color: rgb(255, 255, 255);
+    background: rgb(111, 171, 208) none repeat scroll 0% 0%;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    padding-top: 3px;
+    padding-left: 17px;
+    padding-bottom: 2px;
+    min-width: 123px;
+    height: 22px;
+    margin-right: 10px;
+}
+.dropdown.open .dropdown-menu li{
+    width: 100%;
+}
+.dropdown.open .dropdown-menu li a{
+    min-width: 122px;
+}
+.dropdown.open .dropdown-menu li a:hover{
+    background: #3BC682;
+    color: #fff;
+}
+.col-md-8.col-md-offset-2.sp{
+    margin: 0;
+    width: 100%;
+}
+.col-md-8.col-md-offset-2.sp label{
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+    font-family: UbuntuLight;
+    font-weight: normal;
+    font-size: 16px;
+}
+.col-md-8.col-md-offset-2.sp input{
+    width: 380px;
+    margin: 0 auto;
+    font-family: UbuntuLight;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    text-transform: lowercase;
+}
+.col-md-8.col-md-offset-2.sp .btn.btn-primary.sp{
+    display: block;
+    margin: 0 auto;
+    background: transparent url("/resources/views/images/buttom-stattic.png") no-repeat scroll 0% 0%;
+    border: 0px none;
+    margin-top: 40px;
+    width: 202px;
+    height: 54px;
+    color: rgb(255, 255, 255);
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.form-group.sp{
+    margin: 0;
+}
+.col-md-6.sp{
+    margin-top: 40px;
+}
+.form-group.sp-email{
+    width: 33%;
+    float: left;
+}
+.form-group.sp-email input{
+    width: 272px !important;
+}
+.btn.btn-primary.sp-email{
+    margin: 0px auto;
+    display: block;
+    background: transparent url("/resources/views/images/registration-button-bcg.png") no-repeat scroll 0% 0%;
+    border: medium none;
+    width: 261px;
+    height: 54px;
+    font-family: UbuntuLight;
+    padding: 0;
+    text-transform: uppercase;
+}
+.alert.alert-success{
+    color: #fff;
+    background-color: #593956;
+    border-color: #593956;
+    font-family: UbuntuLight;
+    font-size: 16px;
+}
+.error-box{
+    font-family: UbuntuLight;
+    font-size: 14px;
+}
+#support-sp{
+    border: none;
+    width: 100%;
+}
+#support-sp p{
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 5px;
+}
+#support-sp form>input{
+    border: 3px solid #77bee1;
+    border-radius: 13px;
+    height: 51px;
+    width: 465px;
+    font-family: UbuntuLight;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 17px;
+    padding-top: 2px;
+    letter-spacing: -0.6px;
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+}
+#support-sp textarea{
+    width: 100%;
+    height: 268px;
+    border: 3px solid #77bee1;
+    border-radius: 13px;
+    font-family: UbuntuLight;
+    letter-spacing: -0.6px;
+    background-color: #f3f3f3;
+    text-transform: uppercase;
+    padding: 12px 0;
+    font-size: 14px;
+    color: #a7a7a7;
+    word-spacing: 4px;
+    resize: none;
+    margin-bottom: 20px;
+}
+#support-sp form>p input{
+    float: right;
+    background: transparent url("/resources/views/images/buttom-stattic.png") no-repeat scroll 0% 0%;
+    border: 0;
+    width: 202px;
+    height: 54px;
+    color: #fff;
+    margin-left: -5px;
+    margin-top: 4px;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+}
+#table2 thead tr th:nth-child(2) .tablesorter-header-inner,
+#table2 thead tr th:nth-child(3) .tablesorter-header-inner,
+#table2 thead tr th:nth-child(4) .tablesorter-header-inner{
+    position: relative;
+}
+#table2 thead tr th:nth-child(1) .tablesorter-header-inner a{
+    padding: 13px 21px;
+}
+#table2 thead tr th:nth-child(2) .tablesorter-header-inner i{
+    position: absolute;
+    left: 41px;
+    top: 5px;
+}
+#table2 thead tr th:nth-child(2) .tablesorter-header-inner a{
+    padding: 13px 55px;
+}
+#table2 thead tr th:nth-child(3) .tablesorter-header-inner i{
+    position: absolute;
+    left: 37px;
+    top: 5px;
+}
+#table2 thead tr th:nth-child(3) .tablesorter-header-inner a{
+    padding: 13px 52px;
+}
+#table2 thead tr th:nth-child(4) .tablesorter-header-inner i{
+    position: absolute;
+    left: 41px;
+    top: 5px;
+}
+#table2 thead tr th:nth-child(4) .tablesorter-header-inner a{
+    padding: 13px 57px;
+}
+#table2 thead tr th .tablesorter-header-inner a:hover{
+    color: #fff;
+    background: #808080;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.ubdateByDateForm, .ubdateByDateFormOneDate{
+    border: 1px solid rgb(59, 198, 130) !important;
+    box-shadow: 0px 1px 2px rgba(59, 198, 130, 0.2) inset;
+}
+.ubdateByDateForm:hover, .ubdateByDateFormOneDate:hover{
+    background-color: rgb(59, 198, 130);
+    color: rgb(255, 255, 255);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.margin-acc-red{
+    margin-top: 56px;
+}
+.acc-left-panel{
+    position: relative;
+}
+.acc-left-panel .anct-girls{
+    margin-bottom: 20px;
+    position: absolute;
+    right: 25px;
+    top: 9px;
+}
+.acc-left-panel .anct-girl-img{
+    width: 126px;
+    height: 176px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.acc-left-panel .anct-girl-img img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 0px;
+}
+.acc-left-panel .col-md-5>input{
+    border: 3px solid #77bee1;
+    border-radius: 13px;
+    height: 51px;
+    font-family: UbuntuLight;
+    font-size: 18px;
+    padding-left: 17px;
+    padding-top: 2px;
+    letter-spacing: -0.6px;
+    background-color: #f3f3f3;
+}
+.acc-left-panel .col-md-5>input{
+    width: 272px;
+}
+.acc-right-panel .col-md-5>input{
+    width: 300px;
+}
+.acc-left-panel .row, .acc-right-panel .row{
+    padding: 9px 10px;
+    margin: 0;
+}
+.acc-left-panel span{
+    font-family: "Museo Sans Cyrl 500";
+    color: rgb(99, 127, 163);
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 19px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    display: inline-block;
+    width: 140px;
+}
+.acc-left-panel .col-md-5{
+    width: 50%;
+}
+.buttongroup-acc-redact p{
+    text-align: center;
+}
+.buttongroup-acc-redact input{
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: transparent url("/resources/views/images/buttom-stattic.png") no-repeat scroll 0% 0%;
+    border: 0;
+    width: 202px;
+    height: 54px;
+    color: #fff;
+    font-family: UbuntuLight;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.left-panel.blacklist.redaction{
+    clear: left;
+}
+.left-panel.blacklist.redaction .form-group{
+    margin: 0;
+}
+.left-panel.blacklist.redaction .row input{
+    border: 3px solid #77bee1;
+    border-radius: 13px;
+    height: 51px;
+    width: 272px;
+    font-family: UbuntuLight;
+    font-size: 18px;
+    padding-left: 17px;
+    padding-top: 2px;
+    letter-spacing: -0.6px;
+    background-color: #f3f3f3;
+}
+.row.relative-blacklist{
+    position: relative;
+}
+.row.relative-blacklist img{
+    position: absolute;
+    top: 18px;
+    left: 0px;
+}
+.panel-body .col-md-12{
+    width: 100% !important;
+    border: 0 !important;
+    min-height: 322px !important;
+}
+.panel-body .col-md-12 h1{
+    text-align: center;
+}
+.centered-div-static{
+    width: 50%;
+    margin: 0 auto;
+}
+#example{
+    border: 0px none;
+}
+#example thead tr th{
+    padding: 10px 4px;
+    border-top: 0px none;
+    border-right: 1px solid #fff;
+    border-left: 0 none;
+    border-bottom: 1px solid #fff;
+    height: 45px;
+    text-align: center;
+    font-family: UbuntuLight;
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background: #b3b3b3;
+    cursor: pointer;
+}
+#example thead tr th:hover{
+    color: #fff;
+    background: #808080;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+#example thead tr th:last-child{
+    border-right: 0 none;
+}
+#example tbody tr td{
+    padding: 4px 4px;
+    border: 0 none;
+    text-align: center;
+    font-family: UbuntuLight;
+    font-size: 13px;
+    color: #6a6a69;
+}
+#example .odd, #example .even{
+
+    border-bottom: 1px solid #b3b3b3;
+}
+#example .detail{
+    background: #e1e1e1;
+    border-bottom: 1px solid #b3b3b3;
+}
+#example tbody tr td:first-child a{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+#example tbody tr td:nth-child(3) a{
+    color: #808080;
+}
+#example tbody tr td:nth-child(4), #example tbody tr td:nth-child(5), #example tbody tr td:nth-child(6){
+    font-size: 15px;
+}
+.button-group-static .col-md-12{
+    text-align: center;
+}
+.button-group-static .col-md-12:first-child input,
+#clearCalendar, #clearCalendarOneday{
+    margin: 15px 8px;
+    background: transparent url("/resources/views/images/button-statistics.png") no-repeat scroll 0% 0%;
+    border: 0px none;
+    width: 138px;
+    height: 27px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: UbuntuLight;
+    color: #808080;
+
+}
+.button-group-static .col-md-12:first-child input:hover,
+#clearCalendar:hover, #clearCalendarOneday:hover{
+    background: transparent url("/resources/views/images/button-statistics-active.png") no-repeat scroll 0% 0%;
+    color: #fff;
+}
+.button-group-static .col-md-12:last-child{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    color: #808080;
+}
+.button-group-static #datepickerFrom, .button-group-static #datepickerTo, .button-group-static #datepickerOneDay{
+    text-align: center;
+    width: 126px;
+    border-radius: 14px;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
+    height: 27px;
+    font-weight: 300;
+    color: #B24785;
+    font-size: 15px;
+}
+#example_filter{
+    margin-top: 35px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Ubuntu;
+    color: #808080;
+}
+#example_filter input{
+    width: 200px;
+    border-radius: 14px;
+    border: 1px solid rgb(211, 211, 211);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2) inset;
+    height: 27px;
+    padding: 4px 9px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    font-family: Ubuntu;
+    font-weight: 300;
+    color: #B24785;
+}
+.delete-margin-bott{
+    margin-bottom: 0 !important;
+}
+.allert-acc-search{
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 35px;
+    color: red;
+    padding-top: 24px;
+}
+
+.mergeinput{
+	margin-left:218px;
+}

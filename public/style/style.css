@@ -1,0 +1,23 @@
+/* use class names to hide content for jQuery v3.0 - see https://github.com/jquery/jquery/issues/2308 */
+.hidden { display: none; }
+
+.loading {
+
+    background-image: url('images/715.gif');
+    background-repeat: no-repeat;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+
+}
+    .loading * {
+    opacity: .5;
+}
+
+.ui-dialog-titlebar-close:before {
+    content:'X';
+}
